@@ -12,29 +12,47 @@
 
 ## Flashing
 - Transfer the new mtd on the stick via tftp
-`tftp -gr mtd2.mod.bin TFTP_SERVER_IP`
-- Flash it on the standby partition. You can use `show actimage` to get the current active image. Check `/proc/mtd` for the right mtds
-`mtd -e /dev/mtd2 write /tmp/mtd2.mod.bin /dev/mtd2`
+From twmanu shell
+```
+linuxshell
+tftp -gr mtd2.mod.bin TFTP_SERVER_IP
+```
+- Flash it on the standby partition. 
+You can use `manufactory` and then `show actimage` to get the current active image. Check `/proc/mtd` for the right mtds
+```
+linuxshell
+mtd -e /dev/mtd2 write /tmp/mtd2.mod.bin /dev/mtd2
+```
 - Switch to the new image
-`set actimage a`
+```
+system
+set actimage a
+```
 - Reboot the ONT
-`reboot`
+```
+system
+reboot
+```
 
 ## Other tibits
 ## Change PLOAM
 Use the web UI
 ## Change ONT S/N
+From twmanu shell
 ```
 manufactory
 set sn XXXXXXXXXXX (ASCII)
 ```
 ## Change ONT equipment ID
 Note: model number must be 20 chars total (or less?)
+
+From twmanu shell
 ```
 manufactory
 set equipment id MY_MODEL
 ```
 ## Change hardware version
+From twmanu shell
 ```
 manufactory
 set hardware version MY_HARDWARE_VERSION (ASCII)
