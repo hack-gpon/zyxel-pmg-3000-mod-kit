@@ -52,10 +52,10 @@ Note: model number must be 20 chars total (or less?)
 
 ```
 manufactory
-set equipment id ________MODELLO__
+set equipment id __________G-010G-R__
 exit
 omci
-equipment id ________MODELLO__
+equipment id __________G-010G-R__
 ```
 ## Change hardware version
 ```
