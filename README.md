@@ -1,4 +1,15 @@
-# Zyxel pmg3000-d20b firmware mod kit
+```
+ _   _               _       ____  ____    ___   _   _ 
+| | | |  __ _   ___ | | __  / ___||  _ \  / _ \ | \ | |
+| |_| | / _` | / __|| |/ / | |  _ | |_) || | | ||  \| |
+|  _  || (_| || (__ |   <  | |_| ||  __/ | |_| || |\  |
+|_| |_| \__,_| \___||_|\_\  \____||_|     \___/ |_| \_|
+```
+
+# Zyxel PMG3000-d20b firmware mod kit
+
+> [!IMPORTANT] 
+> See https://hack-gpon.org/ont-zyxel-pmg3000-d20b/ before use this mod kit.
 
 ## Prerequisites
 - Linux os
@@ -11,6 +22,10 @@
 - The script will tell you where the new mtd is
 
 ## Flashing
+
+> [!IMPORTANT] 
+> See https://hack-gpon.org/ont-zyxel-pmg3000-d20b/ for up-to-date command.
+
 Note: all commands start from the twmanu shell
 - Transfer the new mtd on the stick via tftp
 ```
@@ -37,6 +52,10 @@ reboot
 ```
 
 ## Other tibits
+
+> [!IMPORTANT] 
+> See https://hack-gpon.org/ont-zyxel-pmg3000-d20b/ for up-to-date command.
+
 ## Change PLOAM
 Use the web UI
 ## Change ONT S/N
